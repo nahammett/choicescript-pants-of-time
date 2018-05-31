@@ -46,7 +46,7 @@ What is your name?
 
 You put on your Evil Corp nametag (it says $!{name}) and head to work.
 
-You have worked at Evil Corp for a few months, since you left your last job.
+You have worked at Evil Corp for a few months, since you left your last job. The company sepcializes in manufacturing experimental technology. Rumor have corculated that the tech is sold to anyone from the U.S. Government to the Columbian Drug Cartel, but from what you have seen it mostly just goes to Silicon Valley start ups. 
 
 As you swipe your ID card to enter the building, you are stopped by your
 forgettable co-worker.
@@ -74,7 +74,7 @@ results," he says.
 
     *goto after
 
-  #Of course I am.
+  #Of course I am. You nimby.
     *set kindness %-10
     "What test?" you ask, perplexed.
     "Of course I am," you say, walking quickly and hoping $!{friend_name}
