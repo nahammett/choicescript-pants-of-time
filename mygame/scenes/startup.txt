@@ -1,0 +1,96 @@
+*comment Written 2018 by Noah Hammett and David Stockhouse
+
+*title The Pants of Time
+*author Noah Hammett and David Stockhouse
+
+*scene_list
+  startup
+
+*create caution 50
+*create strength 50
+*create kindness 50
+*create charisma 50
+*create name "none"
+*create friend_name "none"
+*create gender "none"
+
+You wake up drowsy, as with every morning. By instinct you arise and start your
+morning routine. You look in the mirror. You note the same features you've seen
+since you were a teenager, you are ...
+
+*choice
+  #Tall and sleek.
+    *set strength %-10
+    *goto after_strength
+  #Short and well-built.
+    *set strength %+10
+    *goto after_strength
+
+*label after_strength
+
+Most people would describe you as ...
+
+*choice
+  #Male
+    *set gender "male"
+    *goto gen_continue
+  #Female
+    *set gender "female"
+    *goto gen_continue
+
+*label gen_continue
+
+What is your name?
+
+*input_text name
+
+You put on your Evil Corp nametag (it says $!{name}) and head to work.
+
+You have worked at Evil Corp for a few months, since you left your last job.
+
+As you swipe your ID card to enter the building, you are stopped by your
+forgettable co-worker.
+
+"Hey $!{name}! Hold the door!"
+
+You try desperately to remember his name. You catch a glimpse at his nametag
+which says ...
+
+*input_text friend_name
+
+"Oh, hi $!{friend_name}," you respond, trying to mask your lack of enthusiasm.
+
+"Are you excited for the new prototype test today? There's a lot riding on the
+results," he says.
+
+*choice
+  #What test?
+    *set kindness %+10
+    "What test?" you ask, perplexed.
+
+    "Oh, I had thought it was big news throughout the company. Some of the
+    higher-ups are testing a groundbreaking new technology today, they say
+    it'll change the world."
+
+    *goto after
+
+  #Of course I am.
+    *set kindness %-10
+    "What test?" you ask, perplexed.
+    "Of course I am," you say, walking quickly and hoping $!{friend_name}
+    won't try so hard to catch up.
+
+    "Me too!" he responds enthusiastically, matching your pace effortlessly.
+
+    *goto after
+
+*label after
+
+*choice
+  #jjkldsjkldfs
+
+    *goto after_choice
+
+*label after_choice
+
+*page_break

@@ -1,0 +1,13 @@
+*if name != "none"
+  Your name is $!{name}.
+*if gender != "none"
+  You are $!{gender}.
+
+*stat_chart
+  opposed_pair Caution
+    Courage
+  opposed_pair Strength
+    Cunning
+  opposed_pair Kindness
+    Ruthlessness
+
